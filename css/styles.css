@@ -137,6 +137,31 @@ margin-left: 50px;
 margin-left: 50px;
 }
 
+.kontact .item{
+  display: inline-flex;
+  align-items: center;
+}
+
+.kontact .item::before{
+  content: "";
+  margin-right: 10px;
+  background-size: contain;
+  
+}
+
+.icon-imail::before {
+  background-image: url('../images/milo.svg');
+  width: 16px;
+  height: 12px;
+}
+
+.icon-telefon::before {
+background-image: url('../images/phone.svg');
+width: 10px;
+height: 16px;
+}
+
+
 
 /* Hero */
 .hero {
