@@ -8,6 +8,7 @@
 --contacts-color: rgba(255, 255, 255, 0.6);
 --third-bg-color:#2f303a;
 --secondary-bg-color-button:#F5F4FA;
+--hero-bg-color:#C4C4C4;
 }
 
 
@@ -61,10 +62,7 @@ letter-spacing: 0.03em;
 .logo-span {
   color: var(--accent-color);
 }
-.logo:hover,
-.logo:focus {
-  
-}
+
 
 /* site-naw */
 .list {
@@ -86,34 +84,24 @@ letter-spacing: 0.03em;
 .studia {
   color: var(--accent-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
-}
-.imail{
+
+.imail-decoration{
   text-decoration: none;
   color: var(--accent-color);
 }
-.imail:hover,
-.imail:focus{
-color:  var(--primary-text-color);
-}
+
 
 .meil{
+  text-decoration: none;
   color: var(--title-text-color);
 }
-.meil:hover,
-.meil:focus{
-  color: var(--accent-color);
-}
+
 
 .telefon{
   text-decoration: none;
   color:var(--title-text-color);
 }
-.telefon:hover,
-.telefon:focus{
-color:  var(--accent-color);
-}
+
 .site-nav{
   margin: 0px;
   padding: 0px;
@@ -137,30 +125,25 @@ margin-left: 50px;
 margin-left: 50px;
 }
 
-.kontact .item{
-  display: inline-flex;
+.imail-icon{
+  margin-right: 10px;
+  fill: var(--accent-color);
+}
+
+.color-icon{
+  margin-right:10px;
+  fill: var(--title-text-color);
+}
+
+.color-icon:hover,
+.color-icon:focus{
+  fill: var(--accent-color);
+}
+
+.link-center{
+  display: flex;
   align-items: center;
 }
-
-.kontact .item::before{
-  content: "";
-  margin-right: 10px;
-  background-size: contain;
-  
-}
-
-.icon-imail::before {
-  background-image: url('../images/milo.svg');
-  width: 16px;
-  height: 12px;
-}
-
-.icon-telefon::before {
-background-image: url('../images/phone.svg');
-width: 10px;
-height: 16px;
-}
-
 
 
 /* Hero */
@@ -170,9 +153,16 @@ height: 16px;
   color: var(--secondary-text-color); 
   text-align: center;
 }
-
-.thirdbg{
-  background-color: var(--third-bg-color);
+.hero{
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--hero-bg-color);
+  background-image: linear-gradient(to top,
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)),
+  url(../images/hero-background.jpg);
 }
 
 .hero-title{
@@ -267,7 +257,7 @@ height: 16px;
 
 
 .feature{
-  margin-top: 0px;
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -277,8 +267,6 @@ height: 16px;
 }
 
 .section-title {
-  /* margin-top: 0px;
-  margin-bottom:30px; */
   color: var(--title-text-color);
   font-weight: 400;
   font-size: 14px;
@@ -295,17 +283,36 @@ height: 16px;
 }
 
 
-.work{
+.test {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-bg-color-button);
+}
+
+.style-icon{
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* наша команда */
+
+.work {
   display: flex;
   padding: 0px;
   justify-content: space-between
 }
 
-.work-foto + .work-foto{
+.work-foto+.work-foto {
   margin-left: 30px;
 }
-
-/* наша команда */
 
 .greybg {
   background-color: var(--secondary-bg-color);
@@ -380,10 +387,7 @@ padding: 0px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.adres:hover,
-.adres:focus{
-  
-}
+
 
 .contact-list{
 text-decoration: none;  
