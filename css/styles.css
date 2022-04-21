@@ -9,6 +9,8 @@
   --third-bg-color: #2f303a;
   --secondary-bg-color-button: #F5F4FA;
   --hero-bg-color: #C4C4C4;
+  --icon-color: #AFB1B8;
+  --bg-icon-color: #FFFFFF;
 }
 
 
@@ -301,13 +303,6 @@ p {
   background-color: var(--secondary-bg-color-button);
 }
 
-.style-icon {
-  display: flex;
-  align-items: center;
-}
-
-
-
 /* наша команда */
 
 .work {
@@ -366,8 +361,62 @@ p {
 
 .work-card {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
+
+.team-work .item {
+  background-color: var(--primery-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* блок соц мереж команди */
+
+.block-icon {
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.list-icon {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.link-icon {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+}
+
+.link-icon+.link-icon {
+  margin-left: 10px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: var(--icon-color);
+  background-color: var(--bg-icon-color)
+}
+
+.team-icon {
+  fill: currentColor;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+
 
 /* footer */
 
