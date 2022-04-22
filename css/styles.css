@@ -91,21 +91,11 @@ p {
   color: var(--accent-color);
 }
 
-.imail-decoration {
-  text-decoration: none;
-  color: var(--accent-color);
-}
-
-
-.meil {
+.decoration {
   text-decoration: none;
   color: var(--title-text-color);
-}
-
-
-.telefon {
-  text-decoration: none;
-  color: var(--title-text-color);
+  display: flex;
+  align-items: center;
 }
 
 .site-nav {
@@ -132,26 +122,17 @@ p {
   margin-left: 50px;
 }
 
-.imail-icon {
-  margin-right: 10px;
-  fill: var(--accent-color);
-}
 
 .color-icon {
   margin-right: 10px;
   fill: var(--title-text-color);
 }
 
-.color-icon:hover,
-.color-icon:focus {
+.colorhov:hover,
+.colorhov:focus {
   fill: var(--accent-color);
+  color: var(--accent-color);
 }
-
-.link-center {
-  display: flex;
-  align-items: center;
-}
-
 
 /* Hero */
 .hero {
