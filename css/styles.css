@@ -122,15 +122,13 @@ p {
   margin-left: 50px;
 }
 
-
 .color-icon {
   margin-right: 10px;
-  fill: var(--title-text-color);
+  fill: currentColor;
 }
 
 .colorhov:hover,
 .colorhov:focus {
-  fill: var(--accent-color);
   color: var(--accent-color);
 }
 
