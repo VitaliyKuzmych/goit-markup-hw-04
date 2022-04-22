@@ -446,7 +446,7 @@ p {
 
 .contact {
   list-style: none;
-  display: flex;
+  t display: flex;
   flex-direction: column;
   padding: 0px;
 
@@ -466,6 +466,7 @@ p {
 .contact-list {
   text-decoration: none;
   color: var(--contacts-color);
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
