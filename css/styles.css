@@ -87,9 +87,9 @@ p {
   color: var(--primary-text-color);
 }
 
-.studia {
+/* .studia {
   color: var(--accent-color);
-}
+} */
 
 .decoration {
   text-decoration: none;
@@ -125,6 +125,11 @@ p {
 .color-icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
 }
 
 .colorhov:hover,
@@ -166,6 +171,7 @@ p {
 /* button */
 .button {
   display: inline-block;
+  border: none;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 100px;
@@ -181,6 +187,7 @@ p {
 }
 
 .button.primary {
+  border: none;
   display: inline-block;
   border-radius: 4px;
   color: var(--secondary-text-color);
@@ -282,6 +289,7 @@ p {
   background: no-repeat;
   background-position: center;
   background-color: var(--secondary-bg-color-button);
+  border-radius: 4px;
 }
 
 /* наша команда */
@@ -416,6 +424,7 @@ p {
   width: 100%;
   height: 100%;
   border: 1px solid var(--clients-color);
+  border-radius: 4px;
   color: var(--clients-color);
 }
 
@@ -461,7 +470,6 @@ p {
 .contact-list {
   text-decoration: none;
   color: var(--contacts-color);
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -494,6 +502,12 @@ p {
 .head-futer {
   color: var(--secondary-text-color);
   margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
 }
 
 .social-links {
@@ -501,12 +515,13 @@ p {
 }
 
 .bgicon {
+  color: var(--secondary-text-color);
   background-color: var(--secondaty-bg-icon);
 }
 
-
-
-
+.futer-icon {
+  fill: currentColor;
+}
 
 /* portfolio */
 
@@ -572,6 +587,8 @@ p {
 
 .newpad:hover,
 .newpad:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
