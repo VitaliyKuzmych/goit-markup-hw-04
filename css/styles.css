@@ -87,10 +87,6 @@ p {
   color: var(--primary-text-color);
 }
 
-/* .studia {
-  color: var(--accent-color);
-} */
-
 .decoration {
   text-decoration: none;
   color: var(--title-text-color);
@@ -524,6 +520,14 @@ p {
 }
 
 /* portfolio */
+
+/* колір порфоліо хедер */
+
+.akcent {
+  color: var(--accent-color);
+}
+
+/* оснвний css порфоліо */
 
 .works a {
   list-style: none;
